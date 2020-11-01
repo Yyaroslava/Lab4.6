@@ -17,10 +17,10 @@ int main()
 
         while (k <= n)
         {
-            P *= sin(k+n);
+            P *= sin(k + n);
             k++;
         }
-        S += sqrt(1+cos(n)*cos(n) + P);
+        S += sqrt(1 + cos(n) * cos(n) + P);
         n++;
     }
 
@@ -38,7 +38,7 @@ int main()
             P *= sin(k + n);
             k++;
         } while (k <= n);
-       S += sqrt(1 + cos(n) * cos(n) + P);
+        S += sqrt(1 + cos(n) * cos(n) + P);
         n++;
     }
 
@@ -51,7 +51,7 @@ int main()
         P = 1;
         for (k = 1; k <= n; k++)
         {
-           P *= sin(k + n);
+            P *= sin(k + n);
         }
         S += sqrt(1 + cos(n) * cos(n) + P);
     }
